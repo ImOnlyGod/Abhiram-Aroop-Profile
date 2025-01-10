@@ -14,6 +14,7 @@ import {
 import emailjs from '@emailjs/browser';
 import { useNavigate } from 'react-router-dom';
 
+
 function Contact() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -91,10 +92,10 @@ function Contact() {
       };
 
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        "SERVICE_ID",
+        "TEMPLATE_ID",
         templateParams,
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        "PUBLIC_ID"
       );
 
       // Reset form
