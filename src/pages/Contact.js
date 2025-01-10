@@ -92,10 +92,10 @@ function Contact() {
       };
 
       await emailjs.send(
-        "REACT_APP_EMAILJS_SERVICE_ID",
-        "REACT_APP_EMAILJS_TEMPLATE_ID",
+        REACT_APP_EMAILJS_SERVICE_ID,
+        REACT_APP_EMAILJS_TEMPLATE_ID,
         templateParams,
-        "REACT_APP_EMAILJS_PUBLIC_KEY"
+        REACT_APP_EMAILJS_PUBLIC_KEY
       );
 
       // Reset form
