@@ -17,7 +17,7 @@ function Navbar({ isDarkMode, toggleTheme }) {
           Abhiram Aroop
         </Typography>
         <Box sx={{ display: 'flex', gap: 2 }}>
-          <Button color="inherit">About</Button>
+          <Button color="inherit" onClick={() => navigate('/about')}>About</Button>
           <Button color="inherit">Projects</Button>
           <Button color="inherit">Contact</Button>
           <Button color="inherit">Resume</Button>
