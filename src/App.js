@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import ContactSuccess from './pages/ContactSuccess';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/contact/success" element={<ContactSuccess />} />
         </Routes>
       </ThemeProvider>
     </Router>
