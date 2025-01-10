@@ -1,49 +1,52 @@
 import React from 'react';
-import { Container, Typography, Box, Button } from '@mui/material';
+import {
+  Container,
+  Typography,
+  Box,
+  Button,
+  Paper,
+} from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
-function ContactSuccess() {
+function MessageSent() {
   const navigate = useNavigate();
 
   return (
     <Box
+      component="section"
       sx={{
         minHeight: '100vh',
+        pt: 10,
+        pb: 5,
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
-        pt: 8,
       }}
     >
       <Container maxWidth="sm">
-        <Box
-          sx={{
-            textAlign: 'center',
-            p: 4,
-          }}
-        >
-          <CheckCircleOutlineIcon
-            sx={{ fontSize: 80, color: 'success.main', mb: 2 }}
+        <Paper elevation={3} sx={{ p: 4, textAlign: 'center' }}>
+          <CheckCircleOutlineIcon 
+            color="success" 
+            sx={{ fontSize: 64, mb: 2 }} 
           />
           <Typography variant="h4" gutterBottom>
-            Message Sent Successfully!
+            Message Sent!
           </Typography>
-          <Typography variant="body1" color="text.secondary" paragraph>
+          <Typography variant="body1" paragraph>
             Thank you for reaching out. I'll get back to you as soon as possible.
           </Typography>
-          <Button
-            variant="contained"
+          <Button 
+            variant="contained" 
             color="primary"
             onClick={() => navigate('/')}
             sx={{ mt: 2 }}
           >
             Return Home
           </Button>
-        </Box>
+        </Paper>
       </Container>
     </Box>
   );
 }
 
-export default ContactSuccess;
+export default MessageSent;
