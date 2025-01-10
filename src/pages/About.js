@@ -19,6 +19,9 @@ function About() {
     'Python',
     'HTML/CSS',
     'Git',
+    'Java',
+    'SQL',
+    'Power BI'
     // Add your skills here
   ];
 
@@ -82,11 +85,11 @@ function About() {
               <List>
                 <ListItem>
                   <ListItemText
-                    primary="Senior Developer - Company Name"
+                    primary="IT Graduate - BMW Group Australia" 
                     secondary={
                       <>
                         <Typography component="span" color="textSecondary">
-                          2020 - Present
+                          2023 - Present
                         </Typography>
                         <br />
                         • Led development of key features for main product
