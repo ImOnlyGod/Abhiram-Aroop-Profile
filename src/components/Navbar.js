@@ -14,12 +14,13 @@ function Navbar({ isDarkMode, toggleTheme }) {
     <AppBar position="fixed" color="default">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Your Name
+          Abhiram Aroop
         </Typography>
         <Box sx={{ display: 'flex', gap: 2 }}>
           <Button color="inherit">About</Button>
           <Button color="inherit">Projects</Button>
           <Button color="inherit">Contact</Button>
+          <Button color="inherit">Resume</Button>
           <IconButton onClick={toggleTheme} color="inherit">
             {isDarkMode ? <Brightness7 /> : <Brightness4 />}
           </IconButton>
