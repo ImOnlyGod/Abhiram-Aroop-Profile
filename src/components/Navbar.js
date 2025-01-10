@@ -26,7 +26,7 @@ function Navbar({ isDarkMode, toggleTheme }) {
           sx={{ flexGrow: 1, cursor: 'pointer' }}
           onClick={() => handleNavigation('/')}
         >
-          Your Name
+          Abhiram Aroop
         </Typography>
         <Box sx={{ display: 'flex', gap: 2 }}>
           <Button 
